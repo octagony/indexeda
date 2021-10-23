@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -84,4 +84,157 @@
   display: block;
   padding: 5px;
   border-radius: 50%;
+}
+.slide {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+  align-items: center;
+  padding-left: 100px;
+  position: relative;
+}
+.slide-text-light {
+  background-color: grey;
+  color: white;
+}
+
+.slide-content {
+  max-width: 400px;
+  position: relative;
+}
+
+.slide-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+  margin-bottom: 30px;
+}
+
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.button-primary {
+  background: #f47322;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.button-default {
+  background-color: #ffffff;
+  color: #5f5f61;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 25px;
+  padding: 12px 50px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.slide-summer {
+  background-image: url("../img/summer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 40.45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.promo {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px;
+  max-width: 570px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  /* обе карточки встали в ряд при помощи display flex и ширины 100% */
+}
+
+.card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.card-text-light {
+  color: #fff;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 21px;
+}
+
+.card-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 168px;
+}
+
+.card-price {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+
+.card-delivery {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
 }
