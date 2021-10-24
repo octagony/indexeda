@@ -167,9 +167,12 @@ body {
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin: -20px;
 }
 
 .card {
+  flex: 50%;
+  margin: 20px;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -179,8 +182,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  /* обе карточки встали в ряд при помощи display flex и ширины 100% */
 }
 
 .card::before {
@@ -237,4 +238,273 @@ body {
   height: 100%;
   z-index: -2;
   object-fit: cover;
+}
+
+.right-card {
+  margin-left: auto;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-bottom: 47px;
+}
+
+.delivery-week {
+  padding: 100px 0px;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery-tag {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  padding: 5px 10px;
+  background-color: #d0fd89;
+}
+
+.tag-health {
+  background-color: #d0fd89;
+}
+
+.tag-vegetable {
+  color: #ffffff;
+  background-color: #aebc41;
+}
+
+.tag-meat {
+  color: #ffffff;
+  background-color: #b86b78;
+}
+
+.tag-bird {
+  color: #ffffff;
+  background-color: #d68334;
+}
+.tag-fish {
+  color: #ffffff;
+  background-color: #cd6255;
+}
+.tag-kids {
+  color: #49494f;
+  background-color: #fffdbf;
+}
+.tag-parent {
+  color: #49494f;
+  background-color: #f6fdc8;
+}
+.tag-holiday {
+  color: #49494f;
+  background-color: #fef7fe;
+}
+
+.section-gray {
+  background-color: #f6f6f6;
+}
+
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 62px;
+}
+
+.tabs-link {
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  text-decoration: none;
+  margin-right: 58px;
+}
+
+.tabs-link.active {
+  color: #f37321;
+}
+
+.tabs-content {
+  display: flex;
+  margin: -15px;
+}
+
+.tabs-card {
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-right: 37px;
+}
+
+.tabs-image {
+  max-width: 100%;
+}
+
+.tabs-card-content {
+  padding: 23px;
+}
+
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+
+.button-outline {
+  background-color: transparent;
+  padding: 15px 25px;
+  border: 2px solid #f37321;
+  box-sizing: border-box;
+  border-radius: 33px;
+  color: #f37321;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #f6f6f6;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 50px;
+}
+
+.footer-link {
+  color: #000000;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  margin-right: 50px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.social-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.advantage {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.section-title {
+  margin-bottom: 52px;
+}
+
+.advantage-cards {
+  display: flex;
+}
+
+.advantage-card {
+  min-width: 270px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-right: 37px;
+  text-align: center;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-img {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.adventage-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 36px;
+}
+
+.advantage-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #49494f;
+  padding: 13px 24px 25px;
 }
